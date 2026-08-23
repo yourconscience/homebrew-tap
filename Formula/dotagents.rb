@@ -1,28 +1,28 @@
 class Dotagents < Formula
   desc "Sync skills, MCP servers, hooks, and roles across coding agents"
   homepage "https://github.com/yourconscience/dotagents"
-  version "0.4.0"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/yourconscience/dotagents/releases/download/v0.4.0/dotagents_0.4.0_darwin_arm64.tar.gz"
-      sha256 "3152372ba6c376ce3637bba3347fc2602460c005da04ecebaa038a607e156e11"
+      url "https://github.com/yourconscience/dotagents/releases/download/v0.7.0/dotagents_0.7.0_darwin_arm64.tar.gz"
+      sha256 "f5f0adc9e9cb2eab920448302b72b8a2e0130ae764cd3caa212608853e67b0e1"
     end
     on_intel do
-      url "https://github.com/yourconscience/dotagents/releases/download/v0.4.0/dotagents_0.4.0_darwin_amd64.tar.gz"
-      sha256 "46eda943dd488b0b41a21c3665f8ab9b42a907dc03a2dca1cf10c3797045966e"
+      url "https://github.com/yourconscience/dotagents/releases/download/v0.7.0/dotagents_0.7.0_darwin_amd64.tar.gz"
+      sha256 "6e6776fffcf286233ae0d1ee7e1df932434fd919e089b765ed1f78e89520a779"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/yourconscience/dotagents/releases/download/v0.4.0/dotagents_0.4.0_linux_arm64.tar.gz"
-      sha256 "02d36a2ab4a482c17704d3dd1d784a7903f3e20bc88e5cfc4d14c940af4639fd"
+      url "https://github.com/yourconscience/dotagents/releases/download/v0.7.0/dotagents_0.7.0_linux_arm64.tar.gz"
+      sha256 "a6bdd47bc12d4374cd32f2fff4a860bd621edfcb00ed7dc7daaf2e72cc1536f3"
     end
     on_intel do
-      url "https://github.com/yourconscience/dotagents/releases/download/v0.4.0/dotagents_0.4.0_linux_amd64.tar.gz"
-      sha256 "b16178309f4f797c61d939cbf1338653eb5ceff90070b40fceb8002560e4e860"
+      url "https://github.com/yourconscience/dotagents/releases/download/v0.7.0/dotagents_0.7.0_linux_amd64.tar.gz"
+      sha256 "17d3fa7b2b885487c4a440d5768af3ae47be8e76bb3dd8232fa19e64bef3eaac"
     end
   end
 
