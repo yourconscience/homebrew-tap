@@ -11,7 +11,7 @@ class Dotagents < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/yourconscience/dotagents/releases/download/v0.8.0/dotagents_0.8.0_darwin_amd64.tar.gz"
-      sha256 "08b1f4f3556b1749c59ae10347fad12a81b34fc3f2f55e268485b96e86b02c1e"
+      sha256 "cbffd2924c0f722c1335c7793a28561aea0660163d9cd43226b88d535009b37f"
 
       define_method(:install) do
         bin.install "dotagents"
@@ -19,7 +19,7 @@ class Dotagents < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/yourconscience/dotagents/releases/download/v0.8.0/dotagents_0.8.0_darwin_arm64.tar.gz"
-      sha256 "d2b5f69a9d43df195752cbf7e0a03a1a57e1c34cd71e320181d6376bca2aa5b9"
+      sha256 "17dd608e50b7c88b5a013d1a94eb32c8dbf678ea4317943e724f1c2f464bcd89"
 
       define_method(:install) do
         bin.install "dotagents"
@@ -30,14 +30,14 @@ class Dotagents < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/yourconscience/dotagents/releases/download/v0.8.0/dotagents_0.8.0_linux_amd64.tar.gz"
-      sha256 "a0cceafefb44c4b4d9ba4e3a6b9abe28e9951f680b9ca31e5c50165219e61fcf"
+      sha256 "326ea43ad6359542efd1982cd0fc90b7ea1ae0c3706cf4521346d2a06b767689"
       define_method(:install) do
         bin.install "dotagents"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/yourconscience/dotagents/releases/download/v0.8.0/dotagents_0.8.0_linux_arm64.tar.gz"
-      sha256 "c6ffb1f31e398c00e7a6e002d708dbd39d0e6c38c2b94555d60c05770947d337"
+      sha256 "937320048691d12e8719a50a7fe0f95e081b092968d32ead5dd65fd8e7106bd7"
       define_method(:install) do
         bin.install "dotagents"
       end
