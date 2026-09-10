@@ -5,21 +5,21 @@
 class Dotagents < Formula
   desc "Sync skills, MCP servers, hooks, and roles across coding agents"
   homepage "https://github.com/yourconscience/dotagents"
-  version "0.7.0"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yourconscience/dotagents/releases/download/v0.7.0/dotagents_0.7.0_darwin_amd64.tar.gz"
-      sha256 "d6f56c02781df178f386b0cab48fc26e26133cda57e15b8576ddfa80c2cff99e"
+      url "https://github.com/yourconscience/dotagents/releases/download/v0.8.0/dotagents_0.8.0_darwin_amd64.tar.gz"
+      sha256 "08b1f4f3556b1749c59ae10347fad12a81b34fc3f2f55e268485b96e86b02c1e"
 
       define_method(:install) do
         bin.install "dotagents"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yourconscience/dotagents/releases/download/v0.7.0/dotagents_0.7.0_darwin_arm64.tar.gz"
-      sha256 "47389ddf17c7ff37626df544fd9bdda54ba0e603b984426c82118146d871303f"
+      url "https://github.com/yourconscience/dotagents/releases/download/v0.8.0/dotagents_0.8.0_darwin_arm64.tar.gz"
+      sha256 "d2b5f69a9d43df195752cbf7e0a03a1a57e1c34cd71e320181d6376bca2aa5b9"
 
       define_method(:install) do
         bin.install "dotagents"
@@ -29,15 +29,15 @@ class Dotagents < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yourconscience/dotagents/releases/download/v0.7.0/dotagents_0.7.0_linux_amd64.tar.gz"
-      sha256 "9d90f37c7d8f37d447710c053988c50d14c41c1e3868bf2c39c262617fc72a64"
+      url "https://github.com/yourconscience/dotagents/releases/download/v0.8.0/dotagents_0.8.0_linux_amd64.tar.gz"
+      sha256 "a0cceafefb44c4b4d9ba4e3a6b9abe28e9951f680b9ca31e5c50165219e61fcf"
       define_method(:install) do
         bin.install "dotagents"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yourconscience/dotagents/releases/download/v0.7.0/dotagents_0.7.0_linux_arm64.tar.gz"
-      sha256 "079318bccfd641443a827566621b0b499c6aa92dca86edd92bc92c409bf21cce"
+      url "https://github.com/yourconscience/dotagents/releases/download/v0.8.0/dotagents_0.8.0_linux_arm64.tar.gz"
+      sha256 "c6ffb1f31e398c00e7a6e002d708dbd39d0e6c38c2b94555d60c05770947d337"
       define_method(:install) do
         bin.install "dotagents"
       end
