@@ -5,21 +5,21 @@
 class Tackroom < Formula
   desc "Sync skills, MCP servers, hooks, and roles across coding agents"
   homepage "https://github.com/yourconscience/tackroom"
-  version "2.4.0"
+  version "2.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yourconscience/tackroom/releases/download/v2.4.0/tackroom_2.4.0_darwin_amd64.tar.gz"
-      sha256 "b6b51db1a173729ca2ae70fa0086613ea7f7d4601c8fc9d885443af18af10ef5"
+      url "https://github.com/yourconscience/tackroom/releases/download/v2.5.0/tackroom_2.5.0_darwin_amd64.tar.gz"
+      sha256 "18ed3e9d23c5994ee13b65a0f00586d1f00814c7e46ba4b8dce991f1e7a67fa2"
 
       define_method(:install) do
         bin.install "tackroom"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yourconscience/tackroom/releases/download/v2.4.0/tackroom_2.4.0_darwin_arm64.tar.gz"
-      sha256 "508e74de56e5c1b010dea6f6ce8c559456a1dcc4264aaefcc893f7fbf4848c42"
+      url "https://github.com/yourconscience/tackroom/releases/download/v2.5.0/tackroom_2.5.0_darwin_arm64.tar.gz"
+      sha256 "63b7884eef299df491df0f1e4ee0adc55876bb3cb4ae90df5b7e3163ef7ba5a6"
 
       define_method(:install) do
         bin.install "tackroom"
@@ -29,15 +29,15 @@ class Tackroom < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yourconscience/tackroom/releases/download/v2.4.0/tackroom_2.4.0_linux_amd64.tar.gz"
-      sha256 "83cf4e5aa5b2391bbc914719ff276da8926cb682dd66061263f37b9b420d41dd"
+      url "https://github.com/yourconscience/tackroom/releases/download/v2.5.0/tackroom_2.5.0_linux_amd64.tar.gz"
+      sha256 "3e4e5a7629cd565c16dc26e5beb9905ad1c956e5d907802389423ec9015a30ac"
       define_method(:install) do
         bin.install "tackroom"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yourconscience/tackroom/releases/download/v2.4.0/tackroom_2.4.0_linux_arm64.tar.gz"
-      sha256 "7c424cbb87737162e36edb5d16a33642097ac4c5f6c91de4a18389ef043dd071"
+      url "https://github.com/yourconscience/tackroom/releases/download/v2.5.0/tackroom_2.5.0_linux_arm64.tar.gz"
+      sha256 "266f7aa8a5a02c2210e99710f3cb7b56996cb367c7c763aab1ad5784fea08f35"
       define_method(:install) do
         bin.install "tackroom"
       end
